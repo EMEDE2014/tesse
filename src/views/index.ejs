@@ -1,0 +1,88 @@
+<%- include('includes/header') %>
+<%- include('includes/navbar') %>
+
+    <section class="topo"></section> <!--topo-->
+    <section class="box-model">
+        <div class="box">
+            <div class="text-box">
+                <img src="/img/logo.png" alt="">
+                <h1>Text Extrator from image</h1>
+                <h4>Extract text from an image</h4>
+                <p>The text extractor will allow you to extract text from any image.
+                 You may upload an image or document  and the tool will pull text from the image.
+                </p>
+            </div> <!--text-box-->
+            <!-- esta CAMPO PARA ANUNCIOS -->
+            <div class="quadroBox">.</div>
+            <p  class="text-warning bg-dark" style="padding: 20px;font-size: 17px; font-weight: 400; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Select a Image or change</p>
+        
+            <form action="/upload"  method="post" enctype="multipart/form-data" class="shadow p-3 mb-0 bg-body rounded verifyFiles">
+                <input class="form-control form-control-lg mb-3 validFiles"  type="file" name="avatar">
+                <button class="btn btn-success">Converter</button>
+            </form>
+
+            <textarea name="" id="textarea" cols="30">
+            
+                <%= data %>
+               
+            </textarea>
+            
+        </div> <!--box-->
+    </section> <!--box-model-->
+
+
+    <main  role="main" class="principal">
+        <!-- ANUNCIOS PARA TELA 1024 -->
+        <div class="tela">
+            <div class="quadroTela">
+               <h1></h1>
+            
+
+            </div> <!--quadroTela-->
+        </div> <!--anunciotela-->
+        
+        <!-- Anuncios -->
+        <div class="coorder">
+            <div class="blocks_left">
+                <div class="quadro1">'</div>
+                <div class="quadro2">'</div>
+
+            </div>
+
+            <div class="blocks_right">
+                 <div class="quadro3">'</div>
+                 <div class="quadro4">'</div>
+
+            </div>
+
+        </div> <!--coordeer-->
+
+        <div class="container ">
+            <h1 class="mb-4 mt-5 text-center">FAQ</h1>
+                 <div class="items">
+                    <div class="align-item w50">
+                        <img src="/img/jpgToTXT.png" alt="">
+                        <p>This is an online OCR (Optical Character Recognition) service to extract text from images.
+                        </p>
+                    </div> <!--align-item-->
+
+                    <div class="align-item w50">
+                        <img src="/img/convert.jpg"  alt="">
+                        <p>Convert your images to text. Extract text from images, photos, and other pictures. This free OCR converter allows you to grab text from images and convert it to a plain text TXT file.</p>
+                    </div> <!--align-item-->
+
+                    <div class="align-item w50">
+                        <img src="/img/image-optic.png" alt="">
+                        <p>Photo to Text Converter, as the name give you a hint, is an online tool or program, using the help of online OCR technique we make it possible to extract text from the images.
+                            A free online Optical Character Recognition software translates the characters in a picture into electronically designated characters.
+                            </p>
+                    </div> <!--align-item-->
+
+        </div> <!--align-item-->
+        </div> <!--container-->
+      
+    </main> <!--principal-->
+
+
+<%- include('includes/footer') %>
+  
