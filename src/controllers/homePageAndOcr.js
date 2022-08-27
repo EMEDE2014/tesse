@@ -25,8 +25,8 @@ exports.receiveFileHomeOcr = (req, res) => {
          if(err) return console.log('This is your error', err);
    
  
- const config = {
-     lang: "eng+fr+frm+chi_sim+spa",
+const config = {
+     lang: "eng+rus+fr+script/Arabic+frm+chi_sim+spa+script/Armenian+script/Bengali+script/Canadian_Aboriginal+script/Cherokee+script/Cyrillic+script/Devanagari+script/Fraktur+script/Georgian+script/Greek+script/Japanese+script/Japanese_vert+script/Lao+script/Latin+script/Malayalam+script/Tamil+script/Vietnamese+tur+spa+por+chi_sim+chi_sim_vert",
      oem: 3,
      psm: 1,
    }
